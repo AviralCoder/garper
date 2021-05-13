@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garper - Betting Game</title>
+    <meta name="description" content="A betting game with imaginary money and against the computer :)">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" href="images/money.png" type=" image/x-icon">
+</head>
+
+<body>
+    <div class="gender-input" id="gend-div">
+        <div>
+            <h1>Welcome to Garper</h1>
+            <h1>Enter your gender - (write either male or female)</h1><br>
+            <b><a href="instructions.html" class="instructions"
+                    style="color: blue;text-decoration: none;font-size: 40px;">Instructions</a></b><br>
+            <input type="text" id="gender-input" placeholder="Type here" autofocus>
+            <div class="div-button">
+                <button id="gender-submit">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="parent">
+        <header>
+            <div class="menu">
+                <center><img src="images/woman.png" alt="your-avatar" id="avatar-image">
+                    <h1 class="label-you">You</h1>
+                    <h1 id="user-money-left" style="font-size: 30px;">Money left:</h1>
+                </center>
+            </div>
+
+            <div class="info">
+                <div class="left">
+                    <h1>Info</h1>
+                    <h1>How much money do you want to bet? </h1>
+                    <input type="number" id="bet-money"><br>
+                    <button id="bet-button">BET</button>
+                    <p>Go down after betting</p>
+                </div>
+
+                <div class="right">
+                    <h1>Tips</h1>
+                    <p>1. Don't give big values</p>
+                    <p>2. Try not to reload the page</p>
+                    <p><b>3. <a href="instructions copy.html" class="instructions"
+                                style="color: blue;text-decoration: none;" target="_aviral">Instructions</a></b></p>
+                </div>
+
+                <div class="image">
+                    <img src="https://image.flaticon.com/icons/png/512/189/189093.png" alt="">
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="parent-2">
+        <footer>
+            <div class="roll-dice"><br>
+                <h1>Roll Dice</h1>
+                <h1 id="dice"></h1>
+                <center>
+                    <button id="roll-button">ROLL</button>
+                </center>
+            </div>
+
+            <div class="result">
+                <div>
+                    <p class="quote"><i>"The more money you lose,the more I get" - Computer probably</i></p>
+                    <h1>Computer Money</h1>
+                    <h1 id="money-left_computer">3000</h1>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

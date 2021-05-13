@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media (max-width: 1024px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu {
+    text-align: center;
+    width: 90vw !important;
+    margin-right: 20px !important;
+  }
+  .info {
+    margin-right: 0 !important;
+    width: 90vw !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .info button {
+    width: 100% !important;
+  }
+  .info input {
+    width: 100% !important;
+  }
+  .info img {
+    margin-top: 30px;
+  }
+  .info .right {
+    text-align: left;
+    margin-top: 20px;
+  }
+  .parent {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .roll-dice {
+    width: 90vw !important;
+  }
+  .parent-2 {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info .left p {
+    display: block !important;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .result {
+    width: 90vw !important;
+  }
+  .quote {
+    font-size: 15px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#333952), to(#4545b8));
+  background: linear-gradient(to right, #333952, #4545b8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.gender-input {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background: #141b37;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  text-align: center;
+}
+
+.gender-input h1 {
+  color: orangered;
+}
+
+.gender-input h1 {
+  font-size: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.gender-input .div-button {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gender-input .div-button button {
+  font-size: 32px;
+  padding: 15px;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  width: 30vw;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: block;
+}
+
+.gender-input .div-button button:hover {
+  background: orangered;
+}
+
+.gender-input input {
+  width: 90vw;
+  font-size: 35px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  padding: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.gender-input input:focus {
+  background: gray;
+  color: white;
+}
+
+.gender-input input::-webkit-input-placeholder {
+  color: white;
+}
+
+.gender-input input:-ms-input-placeholder {
+  color: white;
+}
+
+.gender-input input::-ms-input-placeholder {
+  color: white;
+}
+
+.gender-input input::placeholder {
+  color: white;
+}
+
+.gender-input-done {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background: #141b37;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  text-align: center;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+}
+
+.gender-input-done h1 {
+  color: orangered;
+}
+
+.gender-input-done h1 {
+  font-size: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.gender-input-done .div-button {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gender-input-done .div-button button {
+  font-size: 32px;
+  padding: 15px;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  width: 30vw;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: block;
+}
+
+.gender-input-done .div-button button:hover {
+  background: orangered;
+}
+
+.gender-input-done input {
+  width: 90vw;
+  font-size: 35px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  padding: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.gender-input-done input:focus {
+  background: gray;
+  color: white;
+}
+
+.gender-input-done input::-webkit-input-placeholder {
+  color: white;
+}
+
+.gender-input-done input:-ms-input-placeholder {
+  color: white;
+}
+
+.gender-input-done input::-ms-input-placeholder {
+  color: white;
+}
+
+.gender-input-done input::placeholder {
+  color: white;
+}
+
+.menu {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  margin: 20px 0px 0px 20px;
+  color: white;
+}
+
+.menu h1 {
+  font-size: 30px;
+}
+
+.menu h1.label-you {
+  margin-top: 10px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .info {
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+  margin-right: 20px;
+  width: 82%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 20px;
+}
+
+header .info p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+header .info input {
+  padding: 12px;
+  width: 250px;
+  outline: none;
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+header .info #bet-button {
+  font-size: 23px;
+  padding: 15px;
+  border-radius: 30px;
+  background: white;
+  text-align: center;
+  width: 80%;
+  color: black;
+  cursor: pointer;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: block;
+}
+
+header .info #bet-button:hover {
+  background: orangered;
+}
+
+header .info h1:first-of-type {
+  font-size: 35px;
+}
+
+header .image img {
+  width: 200px;
+}
+
+.roll-dice {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 350px;
+  width: 45%;
+  margin-right: 20px;
+  color: white;
+}
+
+.roll-dice h1 {
+  font-size: 35px;
+}
+
+.roll-dice button {
+  font-size: 23px;
+  padding: 15px;
+  border-radius: 30px;
+  background: white;
+  text-align: center;
+  width: 80%;
+  color: black;
+  cursor: pointer;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: block;
+}
+
+.roll-dice button:hover {
+  background: orangered;
+}
+
+.roll-dice #dice {
+  font-size: 75px;
+  visibility: hidden;
+}
+
+footer {
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .result {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 350px;
+  width: 45%;
+  margin-right: 20px;
+  color: white;
+}
+
+footer .result h1 {
+  font-size: 45px;
+}
+
+footer .result h1:last-of-type {
+  margin-top: 20px;
+}
+
+.info .left p {
+  display: none;
+}
+
+.instructions-body {
+  height: 100vh;
+  width: 100vw;
+  background: #3c4391;
+  text-align: center;
+}
+
+.instructions-body h1 {
+  font-size: 45px;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.instructions-body p {
+  color: white;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.instructions-body header {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.instructions-body header i {
+  margin: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 40px;
+}
+/*# sourceMappingURL=style.css.map */
