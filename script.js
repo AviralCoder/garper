@@ -29,7 +29,7 @@ $(money_left_text).text(`Money left: ${money_left}`);
 
 //functions
 const genderCheck = () =>{
-    if(($(input_gender).val() == "male") || ($(input_gender).val() == "female")){
+    if((input_gender.value.toLowerCase() == "male") || (input_gender.value.toLowerCase() == "female")){
         $(gender_div).addClass("gender-input-done");
         $(gender_div).removeClass("gender-input");
         if($(input_gender).val().toLowerCase() == "male"){
@@ -177,3 +177,6 @@ $(roll_button).click(function (e) {
     }
     console.log(state);
 });
+
+
+console.log("hello world");
