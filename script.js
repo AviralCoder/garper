@@ -12,11 +12,11 @@ const random_dice = document.getElementById("dice");
 const computer_money_text = document.getElementById("money-left_computer");
 //making variables to be used in the game
 let gender;
-let money_left = 10_000;
+let money_left = 10_000_000;
 let state;
 let money_inputted;
 let seconds_before_reload = 1000;
-let computer_money = 10_000;
+let computer_money = 10_000_000;
 
 //initializing sounds
 const aww = new Audio("sounds/aww.mp3");
@@ -175,8 +175,4 @@ $(roll_button).click(function (e) {
     }else{
         location.reload();
     }
-    console.log(state);
 });
-
-
-console.log("hello world");
