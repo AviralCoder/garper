@@ -114,11 +114,11 @@ $(roll_button).click(function (e) {
             if(money_left == 0){
                 alert("You lost, the computer won")
                 setTimeout(() =>{location.reload();},seconds_before_reload)
-            }else if(money_left > 1_000_000){
+            }else if(money_left > 10_000_000){
                 alert("You won,the computer lost")
                 setTimeout(() =>{location.reload();},seconds_before_reload)
             }
-            if(computer_money > 1_000_000){
+            if(computer_money > 10_000_000){
                 alert("You lost, the computer won")
                 setTimeout(() =>{location.reload();},seconds_before_reload)
             }else if(computer_money <= 0){
@@ -160,11 +160,11 @@ $(roll_button).click(function (e) {
             if(money_left == 0){
                 alert("You lost, the computer won")
                 setTimeout(() =>{location.reload();},seconds_before_reload)
-            }else if(money_left > 1_000_000){
+            }else if(money_left > 10_000_000){
                 alert("You won,the computer lost")
                 setTimeout(() =>{location.reload();},seconds_before_reload)
             }
-            if(computer_money > 1_000_000){
+            if(computer_money > 10_000_000){
                 alert("You lost, the computer won")
                 setTimeout(() =>{location.reload();},seconds_before_reload)
             }else if(computer_money <= 0){
